@@ -1,0 +1,58 @@
+First Marathon:
+---------------
+Testcase:1 (AbhiBus)
+==========
+01) Launch Firefox / Chrome and add  implicitlyWait
+    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+02) Load https://www.abhibus.com/
+03) Click on Bus
+04) Type "Chennai" in the FROM text box
+05) Click the first option from the pop up box
+06) Type "Bangalore" in the TO text box
+07) Click the first option from the pop up box
+08) Select tomorrow's date in the Date field
+09) Click Search Buses
+09) Print the name of the first resulting bus (use .getText())
+10) Choose SLEEPER in the left menu from Bus Type
+11) Print the first resulting bus seat count(Example:35 Seats Available)(use .getText())
+12) Click SelectSeat
+13) Choose any one Available seat
+14) Print Seats Selected ,Total Fare
+15) Select Boarding Point  and Dropping Point
+16) Get the Title of the page(use .getTitle())
+17) Close the browser
+
+from Princila(TestLeaf) to everyone:    10:29 AM
+Testcase:2(Amazon)
+===============
+01) Launch Chrome  
+02) Load https://www.amazon.in/
+     add  implicitlyWait
+     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+03) Type "Bags" in the Search box
+04) Choose the      item in the result (bags for boys)
+05) Print the total number of results (like 50000)
+    1-48 of over 50,000 results for "bags for boys"
+06) Select the first 2 brands in the left menu
+    (like American Tourister, Generic)
+07) Choose New Arrivals (Sort)
+08) Print the first resulting bag info (name, discounted price)
+09) Get the page title and close the browser(driver.close())    
+
+from Princila(TestLeaf) to everyone:    10:30 AM
+Testcase 3 (PVR cinemas)
+==========
+01) Launch the Url  https://www.pvrcinemas.com/
+02) Click  on Movie Library
+03) Select the City -->chennai
+04) Select the Genre-->Animation
+05) Select the Language-->english
+06) Click on Apply
+07) Click on first resulting animation movie
+08) Click proceed to book
+09) Enter the all fields  cinema , Name, date, Prefered show time, no of seats, food and beverages,Email and Mobile
+10) Click on copy to self 
+11) Click on  Send Request
+12) Click cancel 
+13) Close the OTP dialog
+14) Verify the ttile of the page
