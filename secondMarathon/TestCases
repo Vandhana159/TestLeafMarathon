@@ -1,0 +1,78 @@
+Note : Add dependency in pom.xml to handle shadow root
+=========================================
+<dependency>
+    <groupId>io.github.sukgu</groupId>
+    <artifactId>automation</artifactId>
+    <version>0.1.2</version>
+</dependency>
+
+Shadow dom =new Shadow(driver);
+WebElement ele = dom.findElementByXPath("");
+
+ElementNotInteractableException
+driver.executeScript("arguments[0].click();", nc);
+
+Marathon: 2 Testcases
+----------
+Credentials:
+hari.radhakrishnan@qeagle.com
+Leaf@1234
+Testcase-1: AdministratorCertifications
+==============================
+Add ChromeOptions to handle browser notification
+ChromeOptions ch = new ChromeOptions();
+ch.addArguments("--disable-notifications");
+ChromeDriver driver = new ChromeDriver(ch);
+1. Launch Salesforce application https://login.salesforce.com/
+2. Login with username as "hari.radhakrishnan@qeagle.com" 
+    and password as "Leaf@123"
+3. Click on Learn More link in Mobile Publisher
+4. Click confirm on Confirm redirect
+5. Click Learning 
+6. And mouse hover on Learning On Trailhead
+7. Clilck on Salesforce Certifications
+8. Click on first resulting Ceritificate
+9. verify - Administrator Overview page
+10.Print the Certifications available for Administrator Certifications (List)
+11.Take A snapshot of Certifications.
+
+
+from Princila(TestLeaf) to everyone:    11:43 AM
+Testcase-2: ArchitectCertifications
+==========================
+Add ChromeOptions to handle browser notification
+ChromeOptions ch = new ChromeOptions();
+ch.addArguments("--disable-notifications");
+ChromeDriver driver = new ChromeDriver(ch);
+1. Launch Salesforce application https://login.salesforce.com/
+2. Login with Provided Credentials
+3. Click on Learn More link in Mobile Publisher
+4. Click  On Learning
+5. And mouse hover on Learning On Trailhead
+6. Click on Salesforce Certifications
+7. Choose Your Role as Salesforce Architect
+8. Get the Text(Summary) of Salesforce Architect 
+9. Get the List of Salesforce Architect Certifications Available
+10.Click on Application Architect 
+11.Get the List of Certifications available
+12.Take A snapshot of Certifications.
+
+
+Testcase:3 Ordering mobile
+===================
+Instance URL:  https://dev31913.service-now.com/
+Username: admin
+Password: q+NozS5Qe8!E
+Add ChromeOptions to handle browser notification
+ChromeOptions ch = new ChromeOptions();
+ch.addArguments("--disable-notifications");
+ChromeDriver driver = new ChromeDriver(ch);
+1. Launch ServiceNow application
+2. Login with valid credentials username as admin and password 
+3. Click-All Enter Service catalog in filter navigator and press enter or Click the ServiceCatalog
+4. Click on  mobiles
+5. Select Apple iphone6s
+6. Update color field to gold and storage field to 128GB
+7. Select  Order now option
+8. Verify order is placed and copy the request number"
+9. Take a snapshot of the ordered page.
